@@ -11,7 +11,7 @@ function getInvestmentInfo() {
     .then(function (data) {
         console.log(data);
      const newParagraph = document.createElement('p');
-     newParagraph.textContent = `Summary: ${data.extract}`;
+     newParagraph.textContent =  `${data.extract}`;
      resultsInvestment.appendChild(newParagraph);
       })
 }
@@ -31,7 +31,7 @@ function getStocksInfo() {
     .then(function (data) {
         console.log(data);
      const newParagraph = document.createElement('p');
-     newParagraph.textContent = `Summary: ${data.extract}`;
+     newParagraph.textContent = `${data.extract}`;
      resultsStocks.appendChild(newParagraph);
       })
 }
@@ -50,7 +50,7 @@ function getCryptoInfo() {
     .then(function (data) {
         console.log(data);
      const newParagraph = document.createElement('p');
-     newParagraph.textContent = `Summary: ${data.extract}`;
+     newParagraph.textContent = `${data.extract}`;
      resultsCrypto.appendChild(newParagraph);
       })
 }
