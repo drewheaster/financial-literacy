@@ -223,7 +223,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(153, 0, 255);
+    background-color: var(--off-white);
 }
 
 .crypto-details {
