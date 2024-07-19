@@ -14,6 +14,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+
 .nav-container {
     height: 100%;
     width: 15%;
@@ -80,6 +81,10 @@ body {
 }
 
 /* Lines 45-104 are for the Investing 101 section */
+.container-titles {
+    font-size: 200%;
+    text-align: center;
+}
 
 .investing-container {
     height: 100%;
@@ -117,9 +122,12 @@ body {
 }
 
 .article-info-container {
+    /* color: red; */
     height: 80%;
     width: 95%;
-    background-color: aliceblue;
+    background-color: white;
+    align-content: center;
+    text-align: center;
 }
 
 
