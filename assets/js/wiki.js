@@ -1,6 +1,4 @@
-const resultsInvestment = document.getElementById('investing');
-
-
+const resultsInvestment = document.getElementById('investing-article');
 
 function getInvestmentInfo() {
 
@@ -13,33 +11,14 @@ function getInvestmentInfo() {
     .then(function (data) {
         console.log(data);
      const newParagraph = document.createElement('p');
-     newParagraph.textContent = `summary: ${data.extract}`;
+     newParagraph.textContent = `Summary: ${data.extract}`;
      resultsInvestment.appendChild(newParagraph);
       })
 }
 
 window.addEventListener('load', getInvestmentInfo)
 
-const resultsCrypto = document.getElementById('crypto');
-
-function getCryptoInfo() {
-  const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/cryptocurrency';
-
-  fetch(requestUrl)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-     const newParagraph = document.createElement('p');
-     newParagraph.textContent = `summary: ${data.extract}`;
-     resultsCrypto.appendChild(newParagraph);
-      })
-}
-
-window.addEventListener('load', getCryptoInfo)
-
-const resultsStocks = document.getElementById('stocks');
+const resultsStocks = document.getElementById('stocks-article');
 
 function getStocksInfo() {
 
@@ -52,16 +31,16 @@ function getStocksInfo() {
     .then(function (data) {
         console.log(data);
      const newParagraph = document.createElement('p');
-     newParagraph.textContent = `summary: ${data.extract}`;
+     newParagraph.textContent = `Summary: ${data.extract}`;
      resultsStocks.appendChild(newParagraph);
       })
 }
 
 window.addEventListener('load', getStocksInfo)
 
-const resultsCoin = document.getElementById('stock-scroll');
+const resultsCrypto = document.getElementById('crypto-article');
 
-function getCoinInfo() {
+function getCryptoInfo() {
   const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/cryptocurrency';
 
   fetch(requestUrl)
@@ -71,7 +50,26 @@ function getCoinInfo() {
     .then(function (data) {
         console.log(data);
      const newParagraph = document.createElement('p');
-     newParagraph.textContent = `summary: ${data.extract}`;
-     resultsCoin.appendChild(newParagraph);
+     newParagraph.textContent = `Summary: ${data.extract}`;
+     resultsCrypto.appendChild(newParagraph);
       })
 }
+
+window.addEventListener('load', getCryptoInfo)
+
+// const resultsCoin = document.getElementById('stock-scroll');
+
+// function getCoinInfo() {
+//   const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/cryptocurrency';
+
+//   fetch(requestUrl)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//         console.log(data);
+//      const newParagraph = document.createElement('p');
+//      newParagraph.textContent = `summary: ${data.extract}`;
+//      resultsCoin.appendChild(newParagraph);
+//       })
+// }
