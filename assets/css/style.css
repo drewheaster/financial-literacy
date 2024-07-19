@@ -69,16 +69,29 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: white;
 }
 
 .logo-container {
-    height: 25%;
-    width: 25%;
-    background-color: green;
+    height: 50%;
+    width: 40%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
 }
+
+.title-container {
+    height: 25%;
+    width: 50%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
+  }
 
 /* Lines 45-104 are for the Investing 101 section */
 .container-titles {
@@ -225,7 +238,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(255, 0, 255);
+    background-color: rgba(247, 123, 247, 0.637);
+    font-size: 115%;
 }
 
 .stocks-details {
@@ -236,6 +250,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .stocks-title-and-paragraph {
@@ -251,10 +266,11 @@ body {
 .stocks-title-container {
     height: 10%;
     width: 95%;
+    font-size: 200%;
 }
 
 .stocks-image {
-    background-color: rgb(238, 146, 7);
+    background-color: rgb(7, 192, 238);
     height: 100%;
     width: 45%;
 }
