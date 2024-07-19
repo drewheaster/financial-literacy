@@ -68,16 +68,29 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: white;
 }
 
 .logo-container {
-    height: 25%;
-    width: 25%;
-    background-color: green;
+    height: 50%;
+    width: 40%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
 }
+
+.title-container {
+    height: 25%;
+    width: 50%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
+  }
 
 /* Lines 45-104 are for the Investing 101 section */
 
