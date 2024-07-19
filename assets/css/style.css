@@ -217,7 +217,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(255, 0, 255);
+    background-color: rgba(247, 123, 247, 0.637);
+    font-size: 115%;
 }
 
 .stocks-details {
@@ -228,6 +229,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .stocks-title-and-paragraph {
@@ -243,10 +245,11 @@ body {
 .stocks-title-container {
     height: 10%;
     width: 95%;
+    font-size: 200%;
 }
 
 .stocks-image {
-    background-color: rgb(238, 146, 7);
+    background-color: rgb(7, 192, 238);
     height: 100%;
     width: 45%;
 }
