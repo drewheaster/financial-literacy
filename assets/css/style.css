@@ -5,6 +5,11 @@
     --dark-grey: #3b3b3b;
 }
 
+* {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     height: 100svh;
     width: 100svw;
@@ -14,11 +19,51 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.modal {
+    color: var(--off-white);
+}
+
+.modal-content {
+    height: 30%;
+    width: 20%;
+    background-color: white;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border-radius: 1rem;
+}
+
+.modal-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 200%;
+    font-weight: 900;
+}
+
+.user-input {
+    margin-bottom: 2rem;
+    border: none;
+    height: 15%;
+    width: 40%;
+    background-color: #f3f3f3;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.user-input:focus {
+    outline-color: var(--primary);
+}
 
 .nav-container {
     height: 100%;
     width: 15%;
     background-color: var(--secondary);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 .navbar-title-container {
@@ -31,6 +76,19 @@ body {
     font-size: 200%;
     font-style: italic;
     font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar-title {
+    text-decoration: none;
+}
+
+.navbar-title:hover {
+    color: var(--off-white);
+}
+
+.navbar-title:visited {
+    color: var(--off-white);
 }
 
 .navbar-selections-container {
@@ -52,6 +110,7 @@ body {
     align-items: center;
     justify-content: left;
     cursor: pointer;
+    color: var(--off-white);
 }
 
 .navbar-selection:hover {
@@ -70,7 +129,8 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: var(--off-white);
+    color: var(--off-white);
 }
 
 .logo-container {
@@ -82,7 +142,12 @@ body {
     background-color: red;
 }
 
-.title-container {
+.logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+.landing-page-title-container {
     height: 25%;
     width: 50%;
     border-radius: 1rem;
@@ -93,10 +158,15 @@ body {
     background-color:blue;
   }
 
+.title-container h1{
+    margin-bottom:5%
+}
+
 /* Lines 45-104 are for the Investing 101 section */
 .container-titles {
     font-size: 200%;
     text-align: center;
+    color: var(--secondary);
 }
 
 .investing-container {
@@ -110,23 +180,26 @@ body {
 }
 
 .investing-details {
-    background-color: rgb(78, 78, 78);
     height: 45%;
     width: 90%;
     border-radius: 2rem;
     overflow: hidden;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .investing-title-and-paragraph {
     background-color: white;
-    height: 100%;
+    height: 90%;
     width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    color: black;
+    box-shadow: -2px 2px 10px #c4c4c4;
+    border-radius: 1rem;
 }
 
 .investing-title-container {
@@ -156,6 +229,111 @@ body {
 } */
 
 .investing-image {
+    height: 90%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.investing-image img {
+    height: 100%;
+}
+
+/* Lines 176-215 are for the Stocks section */
+
+.stocks-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--off-white);
+}
+
+.stocks-details {
+    height: 45%;
+    width: 90%;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.stocks-title-and-paragraph {
+    background-color: white;
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    box-shadow: -2px 2px 10px #c4c4c4;
+    color: black;
+}
+
+.stocks-title-container {
+    height: 10%;
+    width: 95%;
+}
+
+.stocks-image-container {
+    height: 90%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.stocks-image {
+    height: 100%;
+}
+
+/* Lines 188-258 are for the Crypto section */
+
+.crypto-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--off-white);
+}
+
+.crypto-details {
+    background-color: rgb(78, 78, 78);
+    height: 45%;
+    width: 90%;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.crypto-title-and-paragraph {
+    background-color: white;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.crypto-title-container {
+    height: 10%;
+    width: 95%;
+}
+
+.crypto-image {
     background-color: rgb(238, 146, 7);
     height: 100%;
     width: 45%;
@@ -219,6 +397,7 @@ body {
 .youtube-video-title {
     height: 100%;
     width: 75%;
+    font-size:80%;
     white-space: wrap;
     display: flex;
     align-items: center;

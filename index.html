@@ -6,15 +6,26 @@
     <title>Financial Literacy</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
     <body>
+
+        <div class="modal is-active">
+            <div class="modal-background"></div>
+            <form class="modal-content">
+                <h1>Join our newsletter for weekly<br/>economic surprises and updates!</h1>
+                <input id="user-email" class="user-input" placeholder="Email">
+            </form>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+
         <nav class="nav-container"> 
             <div class="navbar-title-container">
-                <h1>MoneyWise</h1>
+                <a href="#home"class="navbar-title">MoneyMasters</a>
             </div>
             <div class="navbar-selections-container">
                 <a class="navbar-selection">Investing 101</a>
@@ -24,24 +35,19 @@
         </nav>
 
         <main class="main-container"> 
-            <section class="landing-page">
+            <section id="home" class="landing-page">
                 <div class="logo-container">
-
-                </div>
-                <div class="title-container">
-                    <h1 >
-                        title   
-                    </h1>
-                    <h2>
-                        subtitle
-                    </h2>
-
+                    <img class="logo" src="./assets/images/money-logo.webp">
+                    <div class="landing-page-title-container">
+                        <h1 >MoneyMasters</h1>
+                        <h2>If it don't make dollars, it dont make $ense</h2>
+                    </div>
                 </div>
             </section>
 
             <!-- Investing 101 section -->
 
-            <section class="investing-container"> 
+            <section id="investing-page" class="investing-container"> 
 
                 <div class="investing-details">
                     <div class="investing-title-and-paragraph" id="investing">
@@ -56,7 +62,7 @@
                     </div>
 
                     <div class="investing-image">
-                        <img>
+                        <img src="./assets/images/investing-image.png">
                     </div>
                 </div>
 
@@ -77,7 +83,6 @@
 
                 </div>
 
-
                 <div class="stocks-details">
                     <div class="stocks-title-and-paragraph">
                         <div class="stocks-title-container">
@@ -90,23 +95,15 @@
                         </div>
                     </div>
 
-                    <div class="stocks-image">
-                        <img src="C:\Users\nramo\onedrive\desktop\financial-literacy\assets\stocks.webp" alt="stocks black and green" height="100%" >
+                    <div class="stocks-image-container">
+                        <img class="stocks-image" src="./assets/images/stocks-image.webp" alt="stocks black and green" >
                         
                     </div>
                 </div>
 
-                <!-- <div class="youtube-scrolling-section">
-                    <a id="youtube-video-card" class="youtube-video-container" target="blank">
-                        <img id="thumbnail" class="youtube-video-img">
-                        <div class="youtube-video-details">
-                            <img id="channel-img">
-                            <div class="youtube-video-title">
-                                <p id="video-title"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
+                <div id="stocks-yt-scrollbar" class="youtube-scrolling-section">
+                    
+                </div>
 
                 
             </section>
@@ -131,17 +128,9 @@
                     </div>
                 </div>
 
-                <!-- <div class="youtube-scrolling-section">
-                    <a id="youtube-video-card" class="youtube-video-container" target="blank">
-                        <img id="thumbnail" class="youtube-video-img">
-                        <div class="youtube-video-details">
-                            <img id="channel-img">
-                            <div class="youtube-video-title">
-                                <p id="video-title"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
+                <div id="crypto-yt-scrollbar" class="youtube-scrolling-section">
+                    
+                </div>
             </section>
         </main>
     </body>
