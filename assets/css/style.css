@@ -266,7 +266,7 @@ body {
 .stocks-title-container {
     height: 10%;
     width: 95%;
-    font-size: 200%;
+    /* font-size: 200%; */
 }
 
 .stocks-image {
