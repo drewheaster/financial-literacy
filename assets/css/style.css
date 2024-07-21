@@ -142,6 +142,11 @@ body {
     background-color: red;
 }
 
+.logo {
+    height: 5rem;
+    width: 5rem;
+}
+
 .landing-page-title-container {
     height: 25%;
     width: 50%;
@@ -152,7 +157,7 @@ body {
     align-items: center;
     background-color:blue;
   }
-  
+
 .title-container h1{
     margin-bottom:5%
 }

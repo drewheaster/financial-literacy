@@ -214,7 +214,6 @@ const getUserEmail = function() {
 
 }
 
-
 handleGetInvestingYouTube();
 handleGetStocksYouTube();
 handleGetCryptoYouTube();
