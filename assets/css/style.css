@@ -8,6 +8,9 @@
 * {
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+    @media (max-width: 600px) {
+        overflow-x: none;
+    }
 }
 
 body {
@@ -17,6 +20,10 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        overflow-x: none;
+    }
 }
 
 .modal {
@@ -64,6 +71,13 @@ body {
     background-color: var(--secondary);
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+    @media (max-width: 600px) {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .navbar-title-container {
@@ -75,12 +89,17 @@ body {
     color: var(--off-white);
     font-size: 200%;
     font-weight: 700;
-    text-decoration: underline;
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .navbar-title {
     text-decoration: none;
     color: var(--off-white);
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .navbar-title:hover {
@@ -100,6 +119,10 @@ body {
     justify-content: space-evenly;
     color: var(--off-white);
     font-size: 120%;
+    @media (max-width: 600px) {
+        flex-direction: row;
+        font-size: 100%;
+    }
 }
 
 .navbar-selection {
@@ -111,10 +134,19 @@ body {
     justify-content: left;
     cursor: pointer;
     color: var(--off-white);
+    @media (max-width: 600px) {
+        height: 80%;
+        width: 30%;
+        padding: 0;
+        justify-content: center;
+    }
 }
 
 .navbar-selection:hover {
     background-color: #aaaaaa3b;
+    @media (max-width: 600px) {
+        background-color: var(--secondary);
+    }
 }
 
 .main-container {
@@ -122,6 +154,10 @@ body {
     width: 85%;
     background-color: coral ;
     overflow-y: scroll;
+    @media (max-width: 600px) {
+        height: 95%;
+        width: 100%;
+    }
 }
 
 .landing-page {
@@ -129,11 +165,12 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--off-white);
     color: var(--off-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media (max-width: 600px) {
+        
+    }
 }
 
 .logo-container {
@@ -143,12 +180,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 600px) {
+        height: 10%;
+        width: 80%;
+    }
 }
 
 .logo {
     height: 7rem;
     width: 7rem;
     margin-right: 1rem;
+    @media (max-width: 600px) {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 0.5rem;
+    }
 }
 
 .landing-page-title-container {
@@ -157,24 +203,33 @@ body {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
+    @media (max-width: 600px) {
+        height: 100%;
+    }
 }
 
 .brand-name-container {
     height: 48%;
     width: 100%;
     text-align: left;
+    @media (max-width: 600px) {
+        height: 50%;
+    }
 }
 
 .brand-name {
     font-size: 250% ;
     font-weight: 700;
     color: var(--primary);
+    @media (max-width: 600px) {
+        font-size: 150%;
+    }
 }
 
 .slogan-container {
-    height: 48%;
+    height: 30%;
     width: 100%;
 }
 
@@ -182,15 +237,20 @@ body {
     color: #c4c4c4;
     text-align: left;
     font-size: 80%;
+    @media (max-width: 600px) {
+        font-size: 60%;
+    }
 }
 
 /* Lines 186-249 are for the Investing 101 section */
 .container-titles {
-    font-size: 200%;
+    font-size: 220%;
     font-weight: 600;
     color: var(--primary);
     text-align: center;
-    color: var(--secondary);
+    @media (max-width: 600px) {
+        font-size: 120%;  
+    }
 }
 
 .investing-container {
@@ -211,6 +271,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+        height: 65%;
+        border-radius: 0;
+    }
 }
 
 .investing-title-and-paragraph {
@@ -223,6 +289,12 @@ body {
     justify-content: space-evenly;
     box-shadow: -2px 2px 10px #c4c4c4;
     border-radius: 1rem;
+    @media (max-width: 600px) {
+        height: fit-content;
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
 }
 
 .investing-title-container {
@@ -237,6 +309,11 @@ body {
     align-content: center;
     text-align: center;
     color: black;
+    @media (max-width: 600px) {
+        height: fit-content;
+        font-size: 80%;
+        font-weight: 500;
+    }
 }
 
 .investing-image {
@@ -245,6 +322,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 600px) {
+        height: 45%;
+        width: 85%;
+    }
 }
 
 .investing-image img {
@@ -271,7 +352,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+        height: 65%;
+        border-radius: 0;
+    }
 }
 
 .stocks-title-and-paragraph {
@@ -284,6 +370,12 @@ body {
     justify-content: space-evenly;
     border-radius: 1rem;
     box-shadow: -2px 2px 10px #c4c4c4;
+    @media (max-width: 600px) {
+        height: fit-content;
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
 }
 
 .stocks-title-container {
@@ -304,6 +396,10 @@ body {
 .stocks-image {
     height: 100%;
     width: 100%;
+    @media (max-width: 600px) {
+        height: 45%;
+        width: 85%;
+    }
 }
 
 /* Lines 307-358 are for the Crypto section */
@@ -326,6 +422,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+        height: 65%;
+        border-radius: 0;
+    }
 }
 
 .crypto-title-and-paragraph {
@@ -338,10 +440,16 @@ body {
     justify-content: space-evenly;
     box-shadow: -2px 2px 10px #c4c4c4;
     border-radius: 1rem;
+    @media (max-width: 600px) {
+        height: fit-content;
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem;
+    }
 }
 
 .crypto-title-container {
-    height: 10%;
+    height: 15%;
     width: 95%;
 }
 
@@ -352,6 +460,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 600px) {
+        height: 45%;
+        width: 85%;
+    }
 }
 
 .crypto-image img {
@@ -374,12 +486,16 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     box-shadow: -2px 2px 10px #c4c4c4;
+    @media (max-width: 600px) {
+        height: 28%;
+        width: 100%;
+        border-radius: 0;
+    }
 }
 
 .youtube-video-container {
     height: 80%;
     width: 16rem;
-    background-color: #353535;
     border-radius: 1rem;
     margin: 0 1rem;
     flex: 0 0 auto;
@@ -389,6 +505,7 @@ body {
     justify-content: space-evenly;
     cursor: pointer;
     text-decoration: none;
+    background-color: #fcfcfc;
 }
 
 .youtube-video-img {
@@ -414,7 +531,7 @@ body {
 }
 
 .youtube-video-title {
-    height: 100%;
+    height: 60%;
     width: 75%;
     font-size:80%;
     white-space: wrap;
@@ -424,5 +541,6 @@ body {
 }
 
 #video-title {
-    color: white;
+    color: #3b3b3b;
+    font-weight: 600;
 }
