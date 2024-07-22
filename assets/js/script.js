@@ -1,4 +1,4 @@
-const apiKey = '';
+const apiKey = 'AIzaSyCNwPmkm_B_QTN-tv1zdCkxzYoZqeFvmYI';
 
 const handleGetInvestingYouTube = function() {
     
@@ -206,13 +206,22 @@ const handleGetCryptoYouTube = function() {
         })
 };
 
-const getUserEmail = function() {
+const userInputEl = $("input[id='user-email']");
+const emailModal = $("form[class='modal-content']");
+const newsletterPopUp = $("div[class='modal']");
 
-    if (localStorage.getItem("userEmail") === null) {
-        localStorage.setItem("userEmail", userInput.value)
-    } 
+emailModal.on("submit", function(){
+    localStorage.setItem("userEmail", userInputEl.val());
+})
 
-}
+let prompt = setInterval(function(){
+            if (localStorage.getItem("userEmail") !== null) {
+                newsletterPopUp.removeClass('is-active');
+                clearInterval(prompt);
+            } else {
+                newsletterPopUp.addClass('is-active')
+            }
+            }, 10000);
 
 handleGetInvestingYouTube();
 handleGetStocksYouTube();
@@ -253,6 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', (event) => {
         if(event.key === "Escape") {
+            closeAllModals();
+        } if(event.key === "Enter") {
             closeAllModals();
         }
     });

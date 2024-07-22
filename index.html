@@ -14,11 +14,11 @@
 
     <body>
 
-        <div class="modal is-active">
+        <div class="modal">
             <div class="modal-background"></div>
             <form class="modal-content">
                 <h1>Join our newsletter for weekly<br/>economic surprises and updates!</h1>
-                <input id="user-email" class="user-input" placeholder="Email">
+                <input type="email" id="user-email" class="user-input" placeholder="Email">
             </form>
             <button class="modal-close is-large" aria-label="close"></button>
         </div>
@@ -28,9 +28,9 @@
                 <a href="#home"class="navbar-title">MoneyMasters</a>
             </div>
             <div class="navbar-selections-container">
-                <a class="navbar-selection">Investing 101</a>
-                <a class="navbar-selection">Stocks</a>
-                <a class="navbar-selection">Crypto</a>
+                <a href="#investing-page" class="navbar-selection">Investing 101</a>
+                <a href="#stocks-page" class="navbar-selection">Stocks</a>
+                <a href="#crypto-page" class="navbar-selection">Crypto</a>
             </div>
         </nav>
 
@@ -39,8 +39,12 @@
                 <div class="logo-container">
                     <img class="logo" src="./assets/images/money-logo.webp">
                     <div class="landing-page-title-container">
-                        <h1 >MoneyMasters</h1>
-                        <h2>If it don't make dollars, it dont make $ense</h2>
+                        <div class="brand-name-container">
+                            <h1 class="brand-name">MoneyMasters</h1>
+                        </div>
+                        <div class="slogan-container">
+                            <h2 class="slogan">If it don't make dollars, it dont make $ense</h2>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -74,16 +78,20 @@
 
             <!-- Stocks section -->
 
-            <section class="stocks-container">
+            <section id="stocks-page" class="stocks-container">
 
-                <div id = "stock-scroll">
+                <!-- <div id = "stock-scroll">
 
                 </div>
                 <div id="stocks">
 
-                </div>
+                </div> -->
 
                 <div class="stocks-details">
+                    <div class="stocks-image-container">
+                        <img class="stocks-image" src="./assets/images/stocks-image.webp" alt="stocks black and green" >
+                        
+                    </div>
                     <div class="stocks-title-and-paragraph">
                         <div class="stocks-title-container">
                             <h1 class="container-titles">Stocks</h1>
@@ -93,11 +101,6 @@
 
                             </p>
                         </div>
-                    </div>
-
-                    <div class="stocks-image-container">
-                        <img class="stocks-image" src="./assets/images/stocks-image.webp" alt="stocks black and green" >
-                        
                     </div>
                 </div>
 
@@ -110,7 +113,7 @@
 
             <!-- Crypto section -->
  
-            <section class="crypto-container">
+            <section id="crypto-page" class="crypto-container">
                 <div class="crypto-details">
                     <div class="crypto-title-and-paragraph">
                         <div class="crypto-title-container">
@@ -124,7 +127,7 @@
                     </div>
 
                     <div class="crypto-image">
-                        <img src="./assets/image/cryptoImage.jpg"> 
+                        <img src="./assets/images/crypto-image.webp"> 
                     </div>
                 </div>
 
@@ -135,6 +138,7 @@
         </main>
     </body>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/wiki.js"></script>
 </html>
