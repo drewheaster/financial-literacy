@@ -80,6 +80,7 @@ body {
 
 .navbar-title {
     text-decoration: none;
+    color: var(--off-white);
 }
 
 .navbar-title:hover {
