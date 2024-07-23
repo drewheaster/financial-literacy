@@ -1,5 +1,6 @@
 const resultsInvestment = document.getElementById('investing-article');
 
+// dynamically calling Wikipedia information for each section
 function getInvestmentInfo() {
 
   const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/investment';
@@ -20,6 +21,7 @@ window.addEventListener('load', getInvestmentInfo)
 
 const resultsStocks = document.getElementById('stocks-article');
 
+// dynamically calling Wikipedia information for each section
 function getStocksInfo() {
 
   const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/stock';
@@ -40,6 +42,7 @@ window.addEventListener('load', getStocksInfo)
 
 const resultsCrypto = document.getElementById('crypto-article');
 
+// dynamically calling Wikipedia information for each section
 function getCryptoInfo() {
   const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/cryptocurrency';
 
@@ -56,20 +59,3 @@ function getCryptoInfo() {
 }
 
 window.addEventListener('load', getCryptoInfo)
-
-// const resultsCoin = document.getElementById('stock-scroll');
-
-// function getCoinInfo() {
-//   const requestUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/cryptocurrency';
-
-//   fetch(requestUrl)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data);
-//      const newParagraph = document.createElement('p');
-//      newParagraph.textContent = `summary: ${data.extract}`;
-//      resultsCoin.appendChild(newParagraph);
-//       })
-// }

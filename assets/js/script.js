@@ -10,6 +10,7 @@ const handleGetInvestingYouTube = function() {
 
             const videoUrl = videos[i].snippet.resourceId.videoId;
 
+            // dynamically creating the youtube scrolling sections
             const youtubeScrollBar = document.getElementById("investing-yt-scrollbar");
 
             const newVideoCard = document.createElement('a');
@@ -82,6 +83,7 @@ const handleGetStocksYouTube = function() {
 
             const youtubeScrollBar = document.getElementById("stocks-yt-scrollbar");
 
+             // dynamically creating the youtube scrolling sections
             const newVideoCard = document.createElement('a');
             const newVideoCardImg = document.createElement('img');
             const newVideoDetails = document.createElement('div');
@@ -150,6 +152,7 @@ const handleGetCryptoYouTube = function() {
 
             const youtubeScrollBar = document.getElementById("crypto-yt-scrollbar");
 
+             // dynamically creating the youtube scrolling sections
             const newVideoCard = document.createElement('a');
             const newVideoCardImg = document.createElement('img');
             const newVideoDetails = document.createElement('div');
@@ -206,6 +209,7 @@ const handleGetCryptoYouTube = function() {
         })
 };
 
+// makes the modal/newsletter reappear if the user doesn't input an email
 const userInputEl = $("input[id='user-email']");
 const emailModal = $("form[class='modal-content']");
 const newsletterPopUp = $("div[class='modal']");
@@ -227,6 +231,7 @@ handleGetInvestingYouTube();
 handleGetStocksYouTube();
 handleGetCryptoYouTube();
 
+// allows for the modal to recognize inputs
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {

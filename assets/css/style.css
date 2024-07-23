@@ -242,7 +242,7 @@ body {
     }
 }
 
-/* Lines 186-249 are for the Investing 101 section */
+/* Lines 245-333 are for the Investing 101 section */
 .container-titles {
     font-size: 220%;
     font-weight: 600;
@@ -332,7 +332,7 @@ body {
     height: 100%;
 }
 
-/* Lines 251-305 are for the Stocks section */
+/* Lines 337-403 are for the Stocks section */
 
 .stocks-container {
     height: 100%;
@@ -402,7 +402,7 @@ body {
     }
 }
 
-/* Lines 307-358 are for the Crypto section */
+/* Lines 405-471 are for the Crypto section */
 
 .crypto-container {
     height: 100%;
